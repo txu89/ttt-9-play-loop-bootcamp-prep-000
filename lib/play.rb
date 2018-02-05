@@ -40,9 +40,7 @@ def play(board)
   count = 0
   while count <= 9 do
     turn(board)
-    if valid_move?(board, index)
-      count += 1
-    end
+    count += 1
   end
 end
   
