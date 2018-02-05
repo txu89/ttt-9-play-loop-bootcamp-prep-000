@@ -30,6 +30,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
+    count += 1
   else
     turn(board)
   end
@@ -37,4 +38,9 @@ end
 
 # Define your play method below
 def play(board)
+  count = 0
+  while count < 9 do
+    turn(board)
+  end
+end
   
